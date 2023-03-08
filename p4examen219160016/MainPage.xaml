@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="p4examen219160016.MainPage"
+             BackgroundImageSource=""
+             BackgroundColor="#092b5a">
+
+    <StackLayout>
+        
+        <Image Source="imagen1.jpg" 
+               Margin="0"
+             HeightRequest="130"
+             HorizontalOptions="Center"
+               Aspect="AspectFill"/>
+        <Label Text=" longitud " TextColor="Black" FontSize="Small" ScaleY="2" TranslationX="21" AnchorY="1"  TranslationY="18"/>
+        <Frame
+            OutlineColor="Black"
+            BackgroundColor="Transparent"
+            Margin="9"
+            Padding="25,0,25,0"
+            HeightRequest="60"
+            CornerRadius="50">
+
+            <Entry  x:Name = "txtnu" TextColor="Black" 
+                   FontSize="18"
+                   />
+        </Frame>
+
+        
+
+        <Label Text=" latitud " TextColor="Black" FontSize="Small" ScaleY="2" TranslationX="21" AnchorY="1" TranslationY="18"/>
+        <Frame
+            OutlineColor="Black"
+            BackgroundColor="Transparent"
+            Margin="9"
+            
+            Padding="25,0,25,0"
+            HeightRequest="60"
+            CornerRadius="50">
+            <Entry TextColor="Black" 
+                   FontSize="18"
+                   Placeholder=" " x:Name="txtnumero2"/>
+        </Frame>
+
+        <Label Text=" Descripcion de la Ubicacion " TextColor="Black" FontSize="Small" ScaleY="2" TranslationX="21" AnchorY="1"  TranslationY="18"/>
+        <Frame
+            OutlineColor="Black"
+            BackgroundColor="Transparent"
+            Margin="9"
+            
+            Padding="25,25,25,25"
+            HeightRequest="60"
+            CornerRadius="50">
+            <Entry TextColor="Black" 
+                   FontSize="18"
+                   Placeholder=" "
+                   x:Name="descripcion"/>
+        </Frame>
+        <Label Text=" Descripcion corta " TextColor="Black" FontSize="Small" ScaleY="2" TranslationX="21" AnchorY="1" TranslationY="18"/>
+        <Frame
+            OutlineColor="Black"
+            BackgroundColor="Transparent"
+            Margin="9"
+            
+            Padding="25,0,25,0"
+            HeightRequest="60"
+            CornerRadius="50">
+            <Entry TextColor="Black" 
+                   FontSize="18"
+                   Placeholder=" "
+                   x:Name="corta"/>
+        </Frame>
+        <Button
+            x:Name="salvarubicacion"
+            Text="Salvar Ubicacion"
+            TextColor="Black"
+            BorderWidth="3"
+            BorderColor="Black"
+            Margin="60,0,60,0"
+            FontSize="18"
+            Clicked="salvarubicacion_Clicked"
+            HeightRequest="60"
+            CornerRadius="6"
+            BackgroundColor="Transparent"/>
+        
+        <Button
+            x:Name="ubicacionsalv"
+            Text="Ubicaciones Salvadas"
+            TextColor="Black"
+            BorderWidth="3"
+            BorderColor="Black"
+            Margin="60,0,60,0"
+            FontSize="18"
+            Clicked="ubicacionsalv_Clicked"
+            HeightRequest="60"
+            CornerRadius="6"
+            BackgroundColor="Transparent"/>
+        
+
+    </StackLayout>
+
+</ContentPage>
+
+    
